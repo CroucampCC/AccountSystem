@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 import java.util.Set;
 
+
 @Entity
 @Table(name = "DEMO_ACCOUNT_TYPE",schema = "VITRSA_SANDBOX")
 
