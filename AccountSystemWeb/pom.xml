@@ -30,16 +30,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>za.ac.nwu.ac</groupId>
-            <artifactId>AccountSystemDomain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>za.ac.nwu.ac</groupId>
-            <artifactId>AccountSystemLogic</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
