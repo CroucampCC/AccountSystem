@@ -54,7 +54,7 @@ public class AccountTypeController {
             @ApiParam(value = "Request body to create a new AccountType.",
                     required = true)
             @RequestBody AccountTypeDto accountType) {
-        AccountTypeDto accountTypeResponse = createAccountTypeFlow.create(accountType);
+        AccountTypeDto accountTypeResponse = (AccountTypeDto) createAccountTypeFlow.create(accountType);
         GeneralResponse<AccountTypeDto> response = new GeneralResponse<>(true, accountTypeResponse);
         return new ResponseEntity(response, HttpStatus.CREATED);
     }
