@@ -1,2 +1,2 @@
-za\ac\nwu\ac\repo\persistence\AccountTypeRepository.class
-za\ac\nwu\ac\repo\config\RepositoryConfig.class
+za\ac\nwu\account\repo\config\RepositoryConfig.class
+za\ac\nwu\account\repo\persistence\AccountTypeRepository.class
