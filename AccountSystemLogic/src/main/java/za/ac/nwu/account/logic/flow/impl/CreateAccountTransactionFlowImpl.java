@@ -2,12 +2,12 @@ package za.ac.nwu.account.logic.flow.impl;
 
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import za.ac.nwu.account.domain.dto.AccountTransactionDto;
-import za.ac.nwu.account.domain.persistence.AccountTransaction;
 import za.ac.nwu.account.domain.persistence.AccountType;
 import za.ac.nwu.account.logic.flow.CreateAccountTransactionFlow;
 import za.ac.nwu.account.logic.flow.FetchAccountTypeFlow;
 import za.ac.nwu.account.translator.AccountTransactionTranslator;
+import za.ac.nwu.account.domain.dto.AccountTransactionDto;
+import za.ac.nwu.account.domain.persistence.AccountTransaction;
 
 import java.time.LocalDate;
 

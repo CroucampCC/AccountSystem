@@ -3,10 +3,10 @@ package za.ac.nwu.account.logic.flow.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import za.ac.nwu.account.domain.dto.AccountTransactionDto;
-import za.ac.nwu.account.domain.persistence.AccountTransaction;
 import za.ac.nwu.account.logic.flow.FetchAccountTransactionFlow;
 import za.ac.nwu.account.translator.AccountTransactionTranslator;
+import za.ac.nwu.account.domain.dto.AccountTransactionDto;
+import za.ac.nwu.account.domain.persistence.AccountTransaction;
 
 import java.util.ArrayList;
 import java.util.List;

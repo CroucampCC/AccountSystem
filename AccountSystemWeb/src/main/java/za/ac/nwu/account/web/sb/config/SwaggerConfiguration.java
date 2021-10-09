@@ -39,7 +39,7 @@ public class SwaggerConfiguration {
                 applicationDescription,
                 applicationVersion,
                 "",
-                new Contact("Christo Croucmp 32177186", "", "jpcroucamp@gmail.com"),
+                new Contact("Christo Croucamp 32177186", "", "jpcroucamp@gmail.com"),
                 "",
                 "",
                 Collections.emptyList());
