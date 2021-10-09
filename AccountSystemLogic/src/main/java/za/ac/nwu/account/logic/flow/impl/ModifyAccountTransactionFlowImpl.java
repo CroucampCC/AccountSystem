@@ -30,7 +30,6 @@ public class ModifyAccountTransactionFlowImpl implements ModifyAccountTransactio
     @Override
     public AccountTransactionDto update(Long transactionID, Long newAccountTransactionAmount , LocalDate newCreationDate) {
         //Get
-
         AccountTransaction accountTransaction = accountTransactionTranslator.getAccountTransactionByPk(transactionID);
         return null != accountTransaction ? new AccountTransactionDto(accountTransaction) : null;
 

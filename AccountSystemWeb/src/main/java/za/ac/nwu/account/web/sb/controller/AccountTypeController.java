@@ -52,9 +52,9 @@ public class AccountTypeController {
             @ApiResponse(code = 500, message = "Internal Server Error", response = GeneralResponse.class),})
     public ResponseEntity<GeneralResponse<AccountTypeDto>> create(
             @ApiParam(value = "Request body to create a new AccountType.",
-                    required = true)
+            required = true)
             @RequestBody AccountTypeDto accountType) {
-        AccountTypeDto accountTypeResponse = (AccountTypeDto) createAccountTypeFlow.create(accountType);
+         AccountTypeDto accountTypeResponse = createAccountTypeFlow.create(accountType);
         GeneralResponse<AccountTypeDto> response = new GeneralResponse<>(true, accountTypeResponse);
         return new ResponseEntity(response, HttpStatus.CREATED);
     }
@@ -77,7 +77,6 @@ public class AccountTypeController {
 
         GeneralResponse<AccountTypeDto> response = new GeneralResponse<>(true, accountType);
         return new ResponseEntity<>(response, HttpStatus.OK);
-        //TODO: *optional* i can view and insert account types
-        // i cannot delete or update Mappings of account types
+
     }
 }

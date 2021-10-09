@@ -14,7 +14,8 @@ import java.util.Objects;
 @ApiModel(value = "AccountTransaction", description = "A DTO that Represents the AccountTransaction")
 public class AccountTransactionDto implements Serializable {
 
-    private static final long serialVersionUID = 8570305150411437559L;
+
+    private static final long serialVersionUID = 163496793973814800L;
     private Long transactionID;
     private String accountTypeMnemonic;
     private Long memberID;
@@ -52,13 +53,7 @@ public class AccountTransactionDto implements Serializable {
     }
 
 
-    //    @ApiModelProperty(position = 1,
-//            value = "AccountTransaction ID",
-//            name = "TransactionID",
-//            notes = "Uniquely identifies the account transaction",
-//            dataType = "java.lang.Long",
-//            example = "1",
-//            required = true)
+
     public Long getTransactionID() {
         return transactionID;
     }
