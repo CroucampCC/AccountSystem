@@ -64,14 +64,6 @@ public class AccountTransactionTranslatorImpl implements AccountTransactionTrans
             throw new RuntimeException("Unable to read from the DB", e);
         }
 
-//    @Override
-//    public AccountTransaction getAccountTransactionByPk(Long transactionID){
-//        try {
-//            return accountTransactionRepository.getAccountTransactionByPk(transactionID);
-//        }catch (Exception e){
-//            throw new RuntimeException("Unable to read from the DB", e);
-//        }
-
 
    }
 

@@ -36,7 +36,7 @@ public class AccountTransactionController {
         this.fetchAccountTransactionFlow = fetchAccountTransactionFlow;
         this.modifyAccountTransactionFlow = modifyAccountTransactionFlow;
     }
-////////////////////////////post new and create
+
     @PostMapping("")
     @ApiOperation(value = "Creates a new AccountTransaction.", notes = "Creates a new AccountTransaction in the DB.")
     @ApiResponses(value = {
@@ -51,7 +51,7 @@ public class AccountTransactionController {
         GeneralResponse<AccountTransactionDto> response = new GeneralResponse<>(true, AccountTransactionResponse);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
-////////////////get all
+
     @GetMapping("/all")
     @ApiOperation(value = "Gets all the made Account transactions.", notes = "Returns a list of account transactions")
     @ApiResponses(value = {
@@ -88,7 +88,7 @@ public class AccountTransactionController {
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
-/////////////////////////GEt memberID
+
     @GetMapping("{memberID}") //can't fetch only one memeber id so added +mneumonic to specify the type of account
     @ApiOperation(value = "Gets the specific Account transactions linked to a single member.", notes = "Returns a list of transactions for a single member")
     @ApiResponses(value = {
@@ -111,7 +111,7 @@ public class AccountTransactionController {
         return new ResponseEntity<>(response, HttpStatus.OK);
 
     }
-//////////////////////////////////////Put (Update)
+
         @PutMapping("{transactionID}")
         @ApiOperation(value = "Updates the specific Account transaction amount of units.", notes = "Updates the accountTransaction amount according to the given transaction ID")
         @ApiResponses(value = {
@@ -144,7 +144,7 @@ public class AccountTransactionController {
             GeneralResponse<AccountTransactionDto> response = new GeneralResponse<>(true, AccountTransaction);
 
             return new ResponseEntity<>(response, HttpStatus.OK);
-        }
+        }}
 
 
         /////Delete
@@ -170,6 +170,4 @@ public class AccountTransactionController {
 //            return new ResponseEntity<>(response, HttpStatus.OK);
 //    }
 
-    //TODO: *MUST HAVE* I can insert account trnasactions, i have added controller for modify
-    // i cannot delete and view or update Mappings of account transactions
-}
+
